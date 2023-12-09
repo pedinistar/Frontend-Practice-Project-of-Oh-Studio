@@ -1,0 +1,314 @@
+/* CSS VARIABLES */
+
+/* :root{
+  -white: #fff;
+  -black: #0000;
+  -green:#7f7f7f;
+  -grey:#e8e5e480
+} */
+
+@font-face {
+  font-family: Neue-R;
+  src: url(assets/Neue\ Montreal\ Regular.otf);
+}
+
+@font-face {
+  font-family: Neue-M;
+  src: url(assets/Neue\ Montreal\ Medium.otf);
+}
+
+/* BOILERPLATE */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Neue-R;
+}
+
+html,body{
+  width: 100%;
+  height: 100%;
+}
+
+/* REUSABLE CLASSES */
+
+.padding-l-r{
+  padding: 0px 12vw 0px 12vw ;
+}
+
+/* MAIN CONTENT */
+
+main{
+  width: 100%;
+}
+
+/* MAIN CONTENT */
+
+
+/* -------------------------------------------- */
+/* PAGE 1 */
+
+#p-1{
+  width: 100%;
+  height: fit-content;
+  position: relative;
+}
+
+nav{
+  width: 300px;
+  height: 50px;
+  position: fixed;
+  top: 3vw;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: rgba(232, 229, 228, 0.5);
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 100px;
+  padding: 4px;
+  z-index: 99;
+}
+
+.nav-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 95px;
+  height: 100%;
+  border-radius: 100px;
+}
+
+.nav-box a{
+  font-size: 14px;
+  text-decoration: none;
+  color: #000;
+  letter-spacing: -.5px;
+  background-color: transparent;
+}
+
+.active{
+  background-color: rgb(255, 255, 255);
+}
+
+.content{
+  padding-top: 15vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.content h1{
+  font-size: 3.8vw;
+  font-family: Neue-M;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: -.8px;
+}
+
+.words{
+  margin-top: 2vw;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  letter-spacing: -.5px;
+  font-size: 14px;
+}
+
+.words-active{
+  height: 32px;
+  width: fit-content;
+  padding: 0px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  background-color: #dadada74;
+}
+
+/* -------------------------------------------- */
+/* PAGE 1 */
+
+
+/* -------------------------------------------- */
+/* PAGE 2 */
+
+#p-2{
+  width: 100%;
+  /* height: calc(112vh*3); */
+  height: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15vw 0 15vw;
+  margin-top: 11vw;
+}
+
+.box{
+  width: 650px;
+  height: 50vh;
+  border-radius: 15px;
+  margin-bottom: 2vw;
+  overflow: hidden;
+  background-position: center;
+  background-size: cover;
+}
+
+.box:nth-child(1){
+  background-image: url(https://images.pexels.com/photos/1083981/pexels-photo-1083981.jpeg);
+}
+
+.box:nth-child(2){
+  background-image: url(https://images.pexels.com/photos/1246078/pexels-photo-1246078.jpeg);
+}
+.box:nth-child(3){
+  background-image: url(https://images.pexels.com/photos/2733955/pexels-photo-2733955.jpeg);
+}
+.box:nth-child(4){
+  background-image: url(https://images.pexels.com/photos/262367/pexels-photo-262367.jpeg);
+}
+.box:nth-child(5){
+  background-image: url(https://images.pexels.com/photos/911254/pexels-photo-911254.jpeg);
+}
+.box:nth-child(6){
+  background-image: url(https://images.pexels.com/photos/1834996/pexels-photo-1834996.jpeg);
+}
+.box:nth-child(7){
+  background-image: url(https://images.pexels.com/photos/1846422/pexels-photo-1846422.jpeg);
+}
+.box:nth-child(8){
+  background-image: url(https://images.pexels.com/photos/7607290/pexels-photo-7607290.jpeg);
+}
+.box:nth-child(9){
+  background-image: url(https://images.pexels.com/photos/16446090/pexels-photo-16446090/free-photo-of-a-bowl-with-watermelon-a-book-and-a-glass-of-water-on-a-table.jpeg);
+}
+.box:nth-child(10){
+  background-image: url(https://images.pexels.com/photos/1048036/pexels-photo-1048036.jpeg);
+}
+.box:nth-child(11){
+  background-image: url(https://images.pexels.com/photos/3337209/pexels-photo-3337209.jpeg);
+}
+.box:nth-child(12){
+  background-image: url(https://images.pexels.com/photos/2879602/pexels-photo-2879602.jpeg);
+}
+
+.profile-box:nth-child(1){
+  background-image: url(https://images.pexels.com/photos/7827894/pexels-photo-7827894.jpeg);
+}
+.profile-box:nth-child(2){
+  background-image: url(https://images.pexels.com/photos/5158170/pexels-photo-5158170.jpeg);
+}
+
+.text{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1vw;
+  background-color: rgba(232, 229, 228, 0.5);
+  background: transparent;
+  backdrop-filter: blur(20px);
+  opacity: 0;
+  transition: all .3s;
+}
+
+.text h3{
+  font-weight: 600;
+  color: #fff;
+}
+
+.circle{
+  width: 2.5vw;
+  height: 2.5vw;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.box:hover .text{
+  opacity: 1;
+}
+
+
+
+/* -------------------------------------------- */
+/* PAGE 2 */
+
+
+/* -------------------------------------------- */
+/* PAGE 3 */
+
+#p-3{
+  width: 100%;
+  height: 60vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+
+.work{
+  margin-top: 10vw;
+  text-align: center;
+  font-size: 1vw;
+}
+
+.cont-work{
+  margin-top: 23vw;
+}
+
+.cont-work h1{
+  font-size: 3.8vw;
+}
+
+.grey-heading{
+  color: #7f7f7f;
+}
+
+.cont-foot{
+  margin-top: 15.5vw;
+}
+
+footer{
+  margin-top: 12.5vw;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .shop{
+  width: 100px;
+  height: 40px;
+  background-color: black;
+  position: fixed;
+  bottom: 1vw;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: #fff;
+  font-size: 14px;
+}
+
+footer .links a{
+  text-decoration: none;
+  color: #000;
+  margin-right: 12px;
+  font-size: 14px;
+}
+
+
+/* PAGE 3 */
+/* -------------------------------------------- */
+
+
+

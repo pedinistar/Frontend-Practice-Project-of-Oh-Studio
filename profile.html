@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>oh.studio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.6.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+  <main>
+    <div id="p-1" class="padding-l-r">
+      <nav>
+        <div class="nav-box"><a href="index.html" class="active">Home</a></div>
+        <div class="nav-box active"><a href="profile.html">Profile</a></div>
+        <div class="nav-box"><a href="contact.html">Contact</a></div>
+      </nav>
+      <div class="content">
+        <h1>Hey 😇 I'm Oli</h1>
+      </div>
+    </div>
+    <div id="p-2">
+      <div class="box profile-box">
+        <div class="text">
+          <h3>Arie</h3>
+          <div class="circle"></div>
+        </div>
+      </div>
+      <div class="box profile-box">
+        <div class="text">
+          <h3>Correlated</h3>
+          <div class="circle"></div>
+        </div>
+      </div>
+    </div>
+    <div id="p-3">
+      <div class="work">
+        <h1>Let's work together.</h1>
+        <h1 class="grey-heading">Get in touch.</h1>
+      </div>
+      <footer class="padding-l-r">
+        <p>© Oli Haris 2023</p>
+        <div class="links">
+          <a href="#">Twiiter</a>
+          <a href="#">LinkedIn</a>
+          <a href="#">Mail</a>
+        </div>
+        <div class="shop">
+          <i class="ri-store-line"></i>
+          <p>Shop</p>
+        </div>
+      </footer>
+    </div>
+  </main>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js" integrity="sha512-7Au1ULjlT8PP1Ygs6mDZh9NuQD0A5prSrAUiPHMXpU6g3UMd8qesVnhug5X4RoDr35x5upNpx0A6Sisz1LSTXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    var tl = gsap.timeline();
+    tl.from(".content h1",{
+      y: 60,
+      opacity:0,
+      duration:2
+    }).from(".work h1",{
+      y: 20,
+      opacity:0,
+      delay:4,
+      duration:2
+    })
+  </script>
+</body>
+</html>
